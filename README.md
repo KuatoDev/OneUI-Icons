@@ -1,7 +1,7 @@
 # Vern OneUI Icons - Icon Pack
 Get OneUI system icons on any customizable launcher.
 
-![](https://i.imgur.com/1L3EeLE.png)
+![](https://ibb.co/r54hJv9)
 
 [![Android](https://img.shields.io/badge/Platform-Android-green.svg?style=flat-square)](https://www.android.com) [![API](https://img.shields.io/badge/API-21%2B-orange.svg?logo=android&style=flat-square)](https://developer.android.com/studio/releases/platforms) [![Release](https://img.shields.io/github/v/release/WSTxda/Lineage-Icons?style=flat-square)](https://github.com/WSTxda/Lineage-Icons/releases)
 
