@@ -3,7 +3,7 @@
     package="id.kuato.oneui">
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher_icon_pack"
+        android:icon="@drawable/vern"
         android:label="@string/app_name"
         android:supportsRtl="true">
         <activity 

@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <resources>
-	<dynamic-clock 
-        defaultHour="10" 
-        defaultMinute="10" 
-        defaultSecond="30" 
-        drawable="clock" 
-        hourLayerIndex="0" 
-        minuteLayerIndex="1" 
-        secondLayerIndex="2" />
-
 	<item component="ComponentInfo{com.android.stk/com.android.stk.StkLauncherActivity}" drawable="sim_toolkit" />
 	<item component="ComponentInfo{com.mediatek.StkSelection/com.mediatek.StkSelection.StkSelection}" drawable="sim_toolkit" />
 	<item component="ComponentInfo{com.android.stk2/com.android.stk2.StkLauncherActivity}" drawable="sim_toolkit" />
@@ -300,7 +291,7 @@
 
     <item component="ComponentInfo{com.samsung.android.scan3d/com.android.camera.CameraLauncher}" drawable="camera" />
     <item component="ComponentInfo{com.samsung.android.ruler/com.android.camera.CameraLauncher}" drawable="camera" />
-    <item component="ComponentInfo{com.google.android.GoogleCameraEng/com.android.camera.CameraLauncher}" drawable="camera" />
+    <item component="ComponentInfo{com.google.android.GoogleCameraEng/com.android.camera.CameraLauncher}" drawable="gcam" />
     <item component="ComponentInfo{org.codeaurora.snapcam/com.android.camera.CameraLauncher}" drawable="gcam" />
 	<item component="ComponentInfo{com.android.MGC/com.android.camera.CameraLauncher}" drawable="gcam" />
 	<item component="ComponentInfo{com.google.android.GoogleCamera/com.android.camera.CameraLauncher}" drawable="gcam" />
@@ -373,8 +364,12 @@
 	<item component="ComponentInfo{org.chromium.chrome/com.google.android.apps.chrome.Main}" drawable="browser" />
 
 
-	<item component="ComponentInfo{com.google.android.apps.nbu.files/.home.HomeActivity}" drawable="files" />
-    <item component="ComponentInfo{com.lonelycatgames.Xplore/.Browser}" drawable="files" />
+<item component="ComponentInfo{bin.mt.plus/.Main}" drawable="mtmgr" />
+
+	<item component="ComponentInfo{com.google.android.apps.nbu.files/.home.HomeActivity}" drawable="gfiles" />
+	
+    <item component="ComponentInfo{com.lonelycatgames.Xplore/.Browser}" drawable="xplore" />
+    
 	<item component="ComponentInfo{com.motorola.filemanager/com.motorola.filemanager.FileManagerActivity}" drawable="files" />
 	<item component="ComponentInfo{com.meizu.filemanager/com.meizu.filemanager.managefile.FileManagerActivity}" drawable="files" />
 	<item component="ComponentInfo{com.android.FileManager.Activity/com.android.FileManager.Activity.FileManager}" drawable="files" />
@@ -844,9 +839,12 @@
 
 	<item component="ComponentInfo{mark.via.gp/mark.via.ui.activity.BrowserActivity}" drawable="browser" />
 
-	<item component="ComponentInfo{com.android.MGC/com.google.android.apps.camera.legacy.app.activity.CaptureActivity}" drawable="camera" />
+	<item component="ComponentInfo{com.android.MGC/com.google.android.apps.camera.legacy.app.activity.CaptureActivity}" drawable="gcam" />
+	<item component="ComponentInfo{com.android.MGC.not.stable/com.google.android.apps.camera.legacy.app.activity.CaptureActivity}" drawable="gcam" />
+	
+	<item component="ComponentInfo{com.google.android.apps.cameralite/com.google.android.apps.cameralite.capture.CaptureActivity}" drawable="gcam" />
 
-	<item component="ComponentInfo{com.google.android.apps.cameralite/com.google.android.apps.cameralite.capture.CaptureActivity}" drawable="camera" />
+
 
 	<item component="ComponentInfo{com.simplemobiletools.smsmessenger/com.simplemobiletools.smsmessenger.activities.SplashActivity.Orange}" drawable="messages" />
 
