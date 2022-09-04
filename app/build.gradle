@@ -1,0 +1,61 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdk 32
+    
+    lint {
+          baseline = file("lint-baseline.xml")
+      }
+      
+    defaultConfig {
+        applicationId rootProject.ext.appId
+        minSdk rootProject.ext.minSdk
+        targetSdk rootProject.ext.targetSdk
+        versionCode 1
+        versionName "1.5.0"
+    }
+    
+    signingConfigs {
+        release {
+            v1SigningEnabled true        
+            v2SigningEnabled true
+            storeFile file("KuatoDev.jks")
+            storePassword "nim13100472"
+            keyAlias "KuatoDev"
+            keyPassword "nim13100472"
+        }
+    }
+    
+    buildTypes {
+        release {
+            ext.enableCrashlytics = false
+            signingConfig signingConfigs.release
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
+        }
+    }
+    
+    buildTypes {
+        debug {
+            ext.enableCrashlytics = false
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
+        }
+    }
+    
+    compileOptions {
+		sourceCompatibility JavaVersion.VERSION_17
+		targetCompatibility JavaVersion.VERSION_17
+	}
+	
+	buildFeatures {
+        viewBinding false
+    }
+}
+
+dependencies {
+    
+}
