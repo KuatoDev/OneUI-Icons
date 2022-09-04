@@ -1,31 +1,17 @@
+buildscript { 
+    project.ext {
+        appId = "id.kuato.oneui"
+        minSdk = 26
+        targetSdk = 32   
+    }
+}
+
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
 plugins {
-    id 'com.android.application'
+    id 'com.android.application' version '7.2.0' apply false
+    id 'com.android.library' version '7.2.0' apply false
 }
 
-android {
-    compileSdk 31
-
-    defaultConfig {
-        applicationId "id.kuato.iconpack.oneui"
-        minSdk 28
-        targetSdk 31
-        versionCode 1
-        versionName "1.0"
-    }
-
-    buildTypes {
-        release {
-            minifyEnabled true
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
-    }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
-}
-
-dependencies {
-	// NOTE: CodeAssist does NOT support adding dependencies here, 
-	// use the library manager instead
+task clean(type: Delete) {
+    delete rootProject.buildDir
 }
